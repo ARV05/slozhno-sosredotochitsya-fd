@@ -122,7 +122,6 @@
 .title__caption{
   font-family: 'IBM Plex mono';
   font-weight: 700;
-  font-style: Bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--title-color);
@@ -139,7 +138,6 @@
 .title-decor{
   font-family: 'IBM Plex Mono';
   font-weight: 700;
-  font-style: Bold;
   font-size: 18px;
   line-height: 23.4px;
 }
@@ -200,7 +198,6 @@
 
 .bold_caption{
   font-weight: 700;
-  font-style: Bold;
 }
 
 .regular_caption{
@@ -278,7 +275,6 @@ footer::before {
 .footer_propert{
   font-family: 'IBM Plex mono';
   font-weight: 700;
-  font-style: Bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--title-color);
