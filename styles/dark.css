@@ -11,7 +11,12 @@
   */
   
   --bg-image: url("../images/cover-image-dark.png");
-  --text-color:#F1B2CE;
-  --accent-color: #FF0070;
   --title-color:#DB00FF;
+  --caption-color:#000028;
+  --header-title-shadows: #FF0070;
+  --nav-color:#FF0070;
+  --shadows-frame:#FF0070;
+  --text-color: #F1B2CE;
+  --footer-shadows: #FF0070;
+  --focus-text-hover: rgba(255, 0, 112, 0.4);
 }

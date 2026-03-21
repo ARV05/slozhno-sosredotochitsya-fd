@@ -35,8 +35,8 @@
   right: 10px;
   width: 25px;
   height: 25px;
-  border-top: 2px solid var(--accent-color); /* красная верхняя граница */
-  border-right: 2px solid var(--accent-color); /* правая граница */
+  border-top: 2px solid var(--nav-color); /* красная верхняя граница */
+  border-right: 2px solid var(--nav-color); /* правая граница */
 }
 
 /* Левый нижний уголок */
@@ -47,8 +47,8 @@
   left: 10px;
   width: 25px;
   height: 25px;
-  border-bottom: 2px solid var(--accent-color); /* нижняя граница */
-  border-left: 2px solid var(--accent-color); /* левая граница */
+  border-bottom: 2px solid var(--nav-color); /* нижняя граница */
+  border-left: 2px solid var(--nav-color); /* левая граница */
 }
 
 .decorative-rec {
@@ -57,7 +57,7 @@
   right: 20px;
   font-size: 12px;
   font-weight: bold;
-  color: var(--accent-color); /* красный цвет — классический вариант для REC */
+  color: var(--nav-color); /* красный цвет — классический вариант для REC */
   text-transform: uppercase; /* все буквы заглавные */
   opacity: 1; /* изначально показан так как темная тема */
   pointer-events: none; /* не реагирует на клики */
@@ -73,11 +73,11 @@
   display: inline-block;
   width: 9px;
   height: 9px;
-  background-color: var(--accent-color);
+  background-color: var(--nav-color);
   border-radius: 50%;
   margin-left: 10px; /* отступ от текста */
   vertical-align: middle; /* выравнивание по вертикали относительно текста */
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--nav-color);
 
 }
 
@@ -96,7 +96,7 @@
 
 .header__theme-menu-button{
   background-color: transparent;
-  color: var(--accent-color);
+  color: var(--nav-color);
   border: none;
   width: 70px;
   height: 26px;
@@ -108,15 +108,15 @@
 }
 
 .header__theme-menu-button_type_dark{
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--nav-color);
 }
 .header__theme-menu-button_type_light:hover{
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--nav-color);
 }
 
 .header__theme-menu-button_type_light:focus{
   border: none;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--nav-color);
 }
 
 .title__caption{
@@ -126,12 +126,12 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--header-title-shadows);
 }
 
 .header__text{
-  color: #000028;
-  background-color: var(--accent-color);
+  color: var(--caption-color);
+  background-color: var(--header-title-shadows);
   justify-self: end;
   max-width: 364px;
 }
@@ -171,7 +171,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--accent-color);
+  color: var(--header-title-shadows);
   margin-top: 0px;
 }
 
@@ -185,8 +185,8 @@
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   line-height: 23.4px;
-  color: #000028;
-  background-color: var(--accent-color);
+  color: var(--caption-color);
+  background-color: var(--header-title-shadows);
   margin-bottom: 10px;
 }
 
@@ -194,8 +194,8 @@
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   line-height: 23.4px;
-  color: #000028;
-  background-color: var(--accent-color);
+  color: var(--caption-color);
+  background-color: var(--header-title-shadows);
 }
 
 .bold_caption{
@@ -216,7 +216,7 @@
 }
 
 .text_link{
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--header-title-shadows);
   cursor: pointer;
 }
 .text_link:hover{
@@ -224,7 +224,7 @@
 }
 
 .text_link:focus{
-  outline: 1px solid var(--text-color-dark);
+  outline: 1px solid var(--focus-text-hover);
 }
 
 .pic{
@@ -251,8 +251,8 @@ footer::after {
   right: 10px;
   width: 25px;
   height: 25px;
-  border-top: 2px solid var(--accent-color); /* красная верхняя граница */
-  border-right: 2px solid var(--accent-color); /* правая граница */
+  border-top: 2px solid var(--nav-color); /* красная верхняя граница */
+  border-right: 2px solid var(--nav-color); /* правая граница */
 }
 
 /* Левый нижний уголок */
@@ -263,8 +263,8 @@ footer::before {
   left: 10px;
   width: 25px;
   height: 25px;
-  border-bottom: 2px solid var(--accent-color); /* нижняя граница */
-  border-left: 2px solid var(--accent-color); /* левая граница */
+  border-bottom: 2px solid var(--nav-color); /* нижняя граница */
+  border-left: 2px solid var(--nav-color); /* левая граница */
 }
 .img_section{
   padding: 0 10px;
@@ -398,7 +398,7 @@ footer::before {
   margin-top: 20px;
   display: grid;
   gap: 20px;
-  width: 728px;
+  min-width: 728px;
   height: 780px;
   grid-template-columns: 1fr 1fr 1fr; /* 3 колонки равной ширины */
   grid-template-rows: 1fr 1fr 1fr;    /* 3 строки равной высоты */
@@ -564,7 +564,7 @@ footer::after {
   margin-top: 20px;
   display: grid;
   gap: 20px;
-  width: 984px;
+  min-width: 984px;
   height: 1048px;
   grid-template-columns: 1fr 1fr 1fr; /* 3 колонки равной ширины */
   grid-template-rows: 1fr 1fr 1fr;    /* 3 строки равной высоты */
