@@ -10,20 +10,19 @@
   background-attachment: fixed;
 }
 
-/* переопределение для тёмной темы */
 .light-theme .page {
   background-color: #1a1a1a;
   background-image: var(--bg-image);
 }
 
-.header{
+.header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr; /* 3 секции по вертикали */
   height: 100vh; /* высота равна высоте окна браузера */
   padding: 10px;
   position: relative;
   gap: 55px;
-  margin-bottom: 40px;
+  margin-block-end: 40px;
 
 }
 
@@ -33,8 +32,8 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   border-top: 2px solid var(--nav-color); /* красная верхняя граница */
   border-right: 2px solid var(--nav-color); /* правая граница */
 }
@@ -45,8 +44,8 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   border-bottom: 2px solid var(--nav-color); /* нижняя граница */
   border-left: 2px solid var(--nav-color); /* левая граница */
 }
@@ -71,35 +70,35 @@
 .decorative-rec::after {
   content: '';
   display: inline-block;
-  width: 9px;
-  height: 9px;
+  inline-size: 9px;
+  block-size: 9px;
   background-color: var(--nav-color);
   border-radius: 50%;
-  margin-left: 10px; /* отступ от текста */
+  margin-inline-start: 10px; /* отступ от текста */
   vertical-align: middle; /* выравнивание по вертикали относительно текста */
   box-shadow: 0px 0px 4px 2px var(--nav-color);
 
 }
 
-.header__theme-menu{
+.header__theme-menu {
   align-self: flex-end;
   justify-self: right;
-  margin-bottom: 11px;
+  margin-block-end: 11px;
 }
 
-.header__theme-menu-list{
+.header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   list-style-type: none;
 }
 
-.header__theme-menu-button{
+.header__theme-menu-button {
   background-color: transparent;
   color: var(--nav-color);
   border: none;
-  width: 70px;
-  height: 26px;
+  inline-size: 70px;
+  block-size: 26px;
   font-family: 'IBM Plex Mono';
   font-weight: 400;
   font-size: 18px;
@@ -107,19 +106,19 @@
   text-align: center;
 }
 
-.header__theme-menu-button_type_dark{
+.header__theme-menu-button_type_dark {
   border: 1px solid var(--nav-color);
 }
-.header__theme-menu-button_type_light:hover{
+.header__theme-menu-button_type_light:hover {
   border: 1px solid var(--nav-color);
 }
 
-.header__theme-menu-button_type_light:focus{
+.header__theme-menu-button_type_light:focus {
   border: none;
   border-bottom: 1px solid var(--nav-color);
 }
 
-.title__caption{
+.title__caption {
   font-family: 'IBM Plex mono';
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -128,64 +127,64 @@
   text-shadow: 4px 4px 0 var(--header-title-shadows);
 }
 
-.header__text{
+.header__text {
   color: var(--caption-color);
   background-color: var(--header-title-shadows);
   justify-self: end;
-  max-width: 364px;
+  max-inline-size: 364px;
 }
 
-.title-decor{
+.title-decor {
   font-family: 'IBM Plex Mono';
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
 }
-.content_section{
+.content_section {
   padding: 0px 10px;
   margin-bottom:50px;
 }
 
-.why_section{
+.why_section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.what_section{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.what_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.how_section{
+.how_section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.question{
+.question {
   font-family: 'IBM Plex Mono';
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
   color: var(--header-title-shadows);
-  margin-top: 0px;
+  margin-block-start: 0px;
 }
 
-.card_list{
+.card_list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.text_caption{
+.text_caption {
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   line-height: 23.4px;
   color: var(--caption-color);
   background-color: var(--header-title-shadows);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .advises{
@@ -225,14 +224,14 @@
 }
 
 .pic{
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover; /* сохраняет пропорции, обрезает лишнее */
   display: block;
 }
 
 footer{
-  height: 100vh; /* высота равна высоте окна браузера */
+  block-size: 100vh; /* высота равна высоте окна браузера */
   padding: 10px;
   position: relative;
   gap: 55px;
@@ -246,8 +245,8 @@ footer::after {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   border-top: 2px solid var(--nav-color); /* красная верхняя граница */
   border-right: 2px solid var(--nav-color); /* правая граница */
 }
@@ -258,21 +257,21 @@ footer::before {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  width: 25px;
-  height: 25px;
+  inline-size: 25px;
+  block-size: 25px;
   border-bottom: 2px solid var(--nav-color); /* нижняя граница */
   border-left: 2px solid var(--nav-color); /* левая граница */
 }
-.img_section{
+.img_section {
   padding: 0 10px;
-  margin-bottom: 40px;
+  margin-block-end: 40px;
 }
 .pic_grid{
   display: grid;
   gap: 10px;
 }
 
-.footer_propert{
+.footer_propert {
   font-family: 'IBM Plex mono';
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -297,14 +296,14 @@ footer::before {
   right: 20px;
 }
 
-.header{
+.header {
   padding-right: 20px;
   padding-left: 0px;
-  margin-bottom: 58px;
+  margin-block-end: 58px;
 }
 
-.header__theme-menu{
-  margin-top: 71px;
+.header__theme-menu {
+  margin-block-start: 71px;
   align-self: center;
 }
 
@@ -312,90 +311,90 @@ footer::before {
   gap: 11px;
 }
 
-.title__caption{
+.title__caption {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
-.title-decor{
-  margin-top: 106px;
+.title-decor {
+  margin-block-start: 106px;
 }
-.content_section{
+.content_section {
   padding: 0px 20px;
-  margin-bottom: 80px;
+  margin-block-end: 80px;
 }
 
-.question{
-  width: 236px;
+.question {
+  inline-size: 236px;
 }
 
-.why_section{
+.why_section {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 0px;
 }
 
-.question{
+.question {
   grid-column: 1; /* первая колонка */
   grid-row: 1 / 3; /* занимает строки 1–2, т. е. обе строки */
 }
 
-.multi{
+.multi {
   grid-column: 2; /* вторая колонка */
   grid-row: 1; /* первая строка */
 }
 
-.dofamin{
+.dofamin {
   grid-column: 2; /* вторая колонка */
   grid-row: 2; /* вторая строка */
 }
 
-.how_section{
+.how_section {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 0px;
 }
 
-.question{
+.question {
   grid-column: 1; /* первая колонка */
   grid-row: 1 / 6;
 }
 
-.advises{
+.advises {
   grid-column: 2;
   grid-row: 1;
 }
 
-.clouds{
+.clouds {
   grid-column: 2;
   grid-row: 2;
 }
 
-.music{
+.music {
   grid-column: 2;
   grid-row: 3;
 }
 
-.walk{
+.walk {
   grid-column: 2;
   grid-row: 4;
 }
 
-.good_eat{
+.good_eat {
   grid-column: 2;
   grid-row: 5;
 }
 
-.read{
+.read {
   grid-column: 2;
   grid-row: 6;
 }
 
-.pic_grid{
-  margin-top: 20px;
+.pic_grid {
+  margin-block-start: 20px;
   display: grid;
   gap: 20px;
-  min-width: 728px;
-  height: 780px;
+  min-inline-size: 728px;
+  block-size: 780px;
   grid-template-columns: 1fr 1fr 1fr; /* 3 колонки равной ширины */
   grid-template-rows: 1fr 1fr 1fr;    /* 3 строки равной высоты */
   grid-template-areas:
@@ -403,28 +402,28 @@ footer::before {
       "tape books ice"
       "tape street street";
 }
-.img_section{
+.img_section {
   padding: 0 20px;
-  margin-bottom: 60px;
+  margin-block-end: 60px;
 }
 
-.sunset{
+.sunset {
   grid-area: sunset;
 }
 
-.ice-cream{
+.ice-cream {
   grid-area: ice;
 }
 
-.tape{
+.tape {
   grid-area: tape;
 }
 
-.books{
+.books {
   grid-area: books;
 }
 
-.street{
+.street {
   grid-area: street;
 }
 
@@ -445,8 +444,8 @@ footer::after {
 .header__theme-menu {
   align-self: start; /* сверху */
   justify-self: center; /* по центру */
-  margin-top: 10px;
-  margin-left: 36px;
+  margin-block-start: 10px;
+  margin-inline-start: 36px;
   padding-right: 16px;
 }
 
@@ -472,96 +471,96 @@ footer::after {
   right: 20px;
 }
 
-.header{
+.header {
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 0px;
-  margin-bottom: 60px;
+  margin-block-end: 60px;
 }
 
-.header__text{
-  max-width: 491px;
-  margin-top: 60px;
+.header__text {
+  max-inline-size: 491px;
+  margin-block-start: 60px;
 }
 
-.title__caption{
+.title__caption {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
-.content_section{
+.content_section {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 80px;
+  margin-block-end: 80px;
 }
 
-.why_section{
+.why_section {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 0px;
 }
 
-.question{
+.question {
   grid-column: 1; /* первая колонка */
   grid-row: 1 / 3; /* занимает строки 1–2, т. е. обе строки */
 }
 
-.multi{
+.multi {
   grid-column: 2; /* вторая колонка */
   grid-row: 1; /* первая строка */
 }
 
-.dofamin{
+.dofamin {
   grid-column: 2; /* вторая колонка */
   grid-row: 2; /* вторая строка */
 }
 
-.how_section{
+.how_section {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 0px;
 }
 
-.question{
+.question {
   grid-column: 1; /* первая колонка */
   grid-row: 1 / 6;
 }
 
-.advises{
+.advises {
   grid-column: 2;
   grid-row: 1;
 }
 
-.clouds{
+.clouds {
   grid-column: 2;
   grid-row: 2;
 }
 
-.music{
+.music {
   grid-column: 2;
   grid-row: 3;
 }
 
-.walk{
+.walk {
   grid-column: 2;
   grid-row: 4;
 }
 
-.good_eat{
+.good_eat {
   grid-column: 2;
   grid-row: 5;
 }
 
-.read{
+.read {
   grid-column: 2;
   grid-row: 6;
 }
 
-.pic_grid{
-  margin-top: 20px;
+.pic_grid {
+  margin-block-start: 20px;
   display: grid;
   gap: 20px;
-  min-width: 984px;
-  height: 1048px;
+  min-inline-size: 984px;
+  block-size: 1048px;
   grid-template-columns: 1fr 1fr 1fr; /* 3 колонки равной ширины */
   grid-template-rows: 1fr 1fr 1fr;    /* 3 строки равной высоты */
   grid-template-areas:
@@ -569,27 +568,27 @@ footer::after {
       "tape books ice"
       "tape street street";
 }
-.img_section{
+.img_section {
   padding: 0 20px;
-  margin-bottom: 60px;
+  margin-block-end: 60px;
 }
-.sunset{
+.sunset {
   grid-area: sunset;
 }
 
-.ice-cream{
+.ice-cream {
   grid-area: ice;
 }
 
-.tape{
+.tape {
   grid-area: tape;
 }
 
-.books{
+.books {
   grid-area: books;
 }
 
-.street{
+.street {
   grid-area: street;
 }
 
@@ -602,11 +601,11 @@ footer::after {
   top: 20px;
   right: 20px;
 }
-  .question{
-    width: 315px;
+  .question {
+    inline-size: 315px;
   }
 
-  .what_section{
+  .what_section {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -619,7 +618,7 @@ footer::after {
     gap: 20px; /* отступы между рядами */
   }
 
-  .footer_propert{
+  .footer_propert {
     font-size: 157px;
   }
 }
