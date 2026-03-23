@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-color: #000028;
+  background-color: var(--background-color);
   margin: 0px;
   background-image: var(--bg-image); /* по умолчанию*/
   background-position: center;
@@ -34,8 +34,8 @@
   right: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-top: 2px solid var(--nav-color); /* красная верхняя граница */
-  border-right: 2px solid var(--nav-color); /* правая граница */
+  border-top: 1px solid var(--nav-color); /* красная верхняя граница */
+  border-right: 1px solid var(--nav-color); /* правая граница */
 }
 
 /* Левый нижний уголок */
@@ -46,8 +46,8 @@
   left: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 2px solid var(--nav-color); /* нижняя граница */
-  border-left: 2px solid var(--nav-color); /* левая граница */
+  border-bottom: 1px solid var(--nav-color); /* нижняя граница */
+  border-left: 1px solid var(--nav-color); /* левая граница */
 }
 
 .decorative-rec {
@@ -247,8 +247,8 @@
   right: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-top: 2px solid var(--nav-color); /* красная верхняя граница */
-  border-right: 2px solid var(--nav-color); /* правая граница */
+  border-top: 1px solid var(--nav-color); /* красная верхняя граница */
+  border-right: 1px solid var(--nav-color); /* правая граница */
 }
 
 /* Левый нижний уголок */
@@ -259,8 +259,8 @@
   left: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 2px solid var(--nav-color); /* нижняя граница */
-  border-left: 2px solid var(--nav-color); /* левая граница */
+  border-bottom: 1px solid var(--nav-color); /* нижняя граница */
+  border-left: 1px solid var(--nav-color); /* левая граница */
 }
 
 .img_section {

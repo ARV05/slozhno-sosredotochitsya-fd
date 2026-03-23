@@ -47,14 +47,15 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
-  --title-color:#FFC2E6;
-  --header-title-shadows: #FF8DCB;
-  --caption-color: #353430;
-  --nav-color:#353430;
-  --shadows-frame:#FF0070;
-  --text-color: #353430;
-  --footer-shadows: #FF0070;
-  --focus-text-hover: rgba(50, 49, 45, 0.4);
+    --background-color: #FFF1F7;
+    --title-color:#FFC2E6;
+    --header-title-shadows: #FF8DCB;
+    --caption-color: #353430;
+    --nav-color:#353430;
+    --shadows-frame:#FF0070;
+    --text-color: #353430;
+    --footer-shadows: #FF0070;
+    --focus-text-hover: rgba(50, 49, 45, 0.4);
   }
 .decorative-rec {
   visibility: hidden;
