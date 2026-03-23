@@ -108,7 +108,7 @@
   border: 1px solid var(--nav-color);
 }
 .header__theme-menu-button_type_light:hover {
-  border: 1px solid var(--nav-color);
+  border: 1px solid var(--focus-text-hover);
 }
 
 .header__theme-menu-button_type_light:focus {
