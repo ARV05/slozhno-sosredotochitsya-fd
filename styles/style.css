@@ -18,7 +18,7 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr; /* 3 секции по вертикали */
-  height: 100vh; /* высота равна высоте окна браузера */
+  block-size: 100vh; /* высота равна высоте окна браузера */
   padding: 10px;
   position: relative;
   gap: 55px;
@@ -213,6 +213,7 @@
   text-shadow: 2px 2px 0 var(--header-title-shadows);
   cursor: pointer;
 }
+
 .text_link:hover {
   text-decoration: underline;
 }
@@ -228,8 +229,9 @@
   display: block;
 }
 
-footer {
+.footer {
   block-size: 100vh; /* высота равна высоте окна браузера */
+  min-block-size: 668px;
   padding: 10px;
   position: relative;
   gap: 55px;
@@ -238,7 +240,7 @@ footer {
   align-items: center;
 }
 
-footer::after {
+.footer::after {
   content: '';
   position: absolute;
   top: 10px;
@@ -250,7 +252,7 @@ footer::after {
 }
 
 /* Левый нижний уголок */
-footer::before {
+.footer::before {
   content: '';
   position: absolute;
   bottom: 10px;
@@ -260,10 +262,13 @@ footer::before {
   border-bottom: 2px solid var(--nav-color); /* нижняя граница */
   border-left: 2px solid var(--nav-color); /* левая граница */
 }
+
 .img_section {
+  display: block;
   padding: 0 10px;
   margin-block-end: 40px;
 }
+
 .pic_grid {
   display: grid;
   gap: 10px;
@@ -384,9 +389,7 @@ footer::before {
   display: grid;
   gap: 20px;
   min-inline-size: 728px;
-  block-size: 780px;
   grid-template-columns: 1fr 1fr 1fr; /* 3 колонки равной ширины */
-  grid-template-rows: 1fr 1fr 1fr;    /* 3 строки равной высоты */
   grid-template-areas:
       "sunset sunset ice"
       "tape books ice"
@@ -417,13 +420,16 @@ footer::before {
   grid-area: street;
 }
 
+.footer{
+  max-block-size: 1024px;
+}
 
-footer::before {
+.footer::before {
   bottom: 20px;
   left: 20px;
 }
 
-footer::after {
+.footer::after {
   top: 20px;
   right: 20px;
 }
@@ -546,18 +552,18 @@ footer::after {
   display: grid;
   gap: 20px;
   min-inline-size: 984px;
-  block-size: 1048px;
   grid-template-columns: 1fr 1fr 1fr; /* 3 колонки равной ширины */
-  grid-template-rows: 1fr 1fr 1fr;    /* 3 строки равной высоты */
   grid-template-areas:
       "sunset sunset ice"
       "tape books ice"
       "tape street street";
 }
+
 .img_section {
   padding: 0 20px;
   margin-block-end: 60px;
 }
+
 .sunset {
   grid-area: sunset;
 }
@@ -578,12 +584,16 @@ footer::after {
   grid-area: street;
 }
 
-footer::before {
+.footer{
+  max-block-size: 768px;
+}
+
+.footer::before {
   bottom: 20px;
   left: 20px;
 }
 
-footer::after {
+.footer::after {
   top: 20px;
   right: 20px;
 }
