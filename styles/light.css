@@ -43,3 +43,45 @@
 }
 
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+  --title-color:#FFC2E6;
+  --header-title-shadows: #FF8DCB;
+  --caption-color: #353430;
+  --nav-color:#353430;
+  --shadows-frame:#FF0070;
+  --text-color: #353430;
+  --footer-shadows: #FF0070;
+  --focus-text-hover: rgba(50, 49, 45, 0.4);
+  }
+.decorative-rec {
+  visibility: hidden;
+}
+
+.question {
+  color: var(--text-color);
+}
+
+.header__theme-menu-button_type_dark {
+  border: none;
+}
+
+.header__theme-menu-button_type_dark:hover {
+  border: 1px solid var(--focus-text-hover);
+}
+
+.header__theme-menu-button_type_dark:focus {
+  border:none;
+  border-bottom: 1px solid var(--nav-color);
+}
+
+.header__theme-menu-button_type_light {
+  border: 1px solid var(--nav-color);
+}
+
+.header__theme-menu-button_type_light:hover {
+  border: 1px solid var(--nav-color);
+}
+}
