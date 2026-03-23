@@ -283,7 +283,7 @@
   text-shadow: 2px 2px 0 var(--footer-shadows);
 }
 
-@media (min-width: 768px)and (max-width:1023px) {
+@media (min-width: 768px) {
 .decorative-rec {
   top: 20px;
   right: 30px;
@@ -495,16 +495,6 @@
   gap: 0px;
 }
 
-.multi {
-  grid-column: 2; /* вторая колонка */
-  grid-row: 1; /* первая строка */
-}
-
-.dofamin {
-  grid-column: 2; /* вторая колонка */
-  grid-row: 2; /* вторая строка */
-}
-
 .how_section {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -513,75 +503,15 @@
 
 .question {
   inline-size: 315px;
-  grid-column: 1; /* первая колонка */
-  grid-row: 1 / 6;
-}
-
-.advises {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.clouds {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.music {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.walk {
-  grid-column: 2;
-  grid-row: 4;
-}
-
-.good_eat {
-  grid-column: 2;
-  grid-row: 5;
-}
-
-.read {
-  grid-column: 2;
-  grid-row: 6;
 }
 
 .pic_grid {
-  margin-block-start: 20px;
-  display: grid;
-  gap: 20px;
   min-inline-size: 984px;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 колонки равной ширины */
-  grid-template-areas:
-      "sunset sunset ice"
-      "tape books ice"
-      "tape street street";
 }
 
 .img_section {
   padding: 0 20px;
   margin-block-end: 60px;
-}
-
-.sunset {
-  grid-area: sunset;
-}
-
-.ice-cream {
-  grid-area: ice;
-}
-
-.tape {
-  grid-area: tape;
-}
-
-.books {
-  grid-area: books;
-}
-
-.street {
-  grid-area: street;
 }
 
 .footer{
