@@ -19,9 +19,9 @@
   --footer-shadows: #FF0070;
   --focus-text-hover: rgba(50, 49, 45, 0.4);
 
-  .decorative-rec {
-    visibility: hidden;
-  }
+.decorative-rec {
+  visibility: hidden;
+}
 
 .question {
   color: var(--text-color);
