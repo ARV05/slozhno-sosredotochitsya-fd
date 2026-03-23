@@ -420,7 +420,7 @@
   grid-area: street;
 }
 
-.footer{
+.footer {
   max-block-size: 1024px;
 }
 
@@ -514,7 +514,7 @@
   margin-block-end: 60px;
 }
 
-.footer{
+.footer {
   max-block-size: 768px;
 }
 
