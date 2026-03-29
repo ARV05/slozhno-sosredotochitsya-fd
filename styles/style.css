@@ -4,7 +4,7 @@
   background-color: var(--background-color);
   object-fit: cover;
   object-position: center;
-  background-image: var(--bg-image); /* по умолчанию*/
+  background-image: var(--bg-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,8 +13,8 @@
 
 .header {
   display: grid;
-  grid-template-rows: 1fr min-content 1fr; /* 3 секции по вертикали */
-  block-size: 100vh; /* высота равна высоте окна браузера */
+  grid-template-rows: 1fr min-content 1fr;
+  block-size: 100vh;
   padding: 10px;
   position: relative;
   gap: 55px;
@@ -22,7 +22,6 @@
   min-height: 668px;
 }
 
-/* Правый верхний уголок */
 .decorated-zone::after {
   content: '';
   position: absolute;
@@ -30,11 +29,10 @@
   right: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-top: 1px solid var(--nav-color); /* красная верхняя граница */
-  border-right: 1px solid var(--nav-color); /* правая граница */
+  border-top: 1px solid var(--nav-color);
+  border-right: 1px solid var(--nav-color);
 }
 
-/* Левый нижний уголок */
 .decorated-zone::before {
   content: '';
   position: absolute;
@@ -42,8 +40,8 @@
   left: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--nav-color); /* нижняя граница */
-  border-left: 1px solid var(--nav-color); /* левая граница */
+  border-bottom: 1px solid var(--nav-color);
+  border-left: 1px solid var(--nav-color);
 }
 
 .decorative-rec {
@@ -53,9 +51,9 @@
   font-size: 18px;
   font-weight: 400;
   color: var(--nav-color);
-  text-transform: uppercase; /* все буквы заглавные */
-  opacity: 1; /* изначально показан так как темная тема */
-  pointer-events: none; /* не реагирует на клики */
+  text-transform: uppercase;
+  opacity: 1;
+  pointer-events: none;
   font-family: 'IBM Plex Mono', monospace;
   line-height: 25px;
   text-align: center;
@@ -68,8 +66,8 @@
   block-size: 9px;
   background-color: var(--nav-color);
   border-radius: 50%;
-  margin-inline-start: 10px; /* отступ от текста */
-  vertical-align: middle; /* выравнивание по вертикали относительно текста */
+  margin-inline-start: 10px;
+  vertical-align: middle;
   box-shadow: 0px 0px 4px 2px var(--nav-color);
 
 }
@@ -140,7 +138,7 @@
 
 .content_section {
   padding: 0px 10px;
-  margin-bottom: 40px;
+  margin-block-end: 40px;
 }
 
 .why_section {
@@ -190,7 +188,7 @@
   line-height: 23.4px;
   color: var(--caption-color);
   background-color: var(--header-title-shadows);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .bold_caption {
@@ -207,7 +205,7 @@
   font-size: 18px;
   line-height: 23.4px;
   color: var(--text-color);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .text_link {
@@ -227,12 +225,12 @@
 .pic {
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover; /* сохраняет пропорции, обрезает лишнее */
+  object-fit: cover;
   display: block;
 }
 
 .footer {
-  block-size: 100vh; /* высота равна высоте окна браузера */
+  block-size: 100vh;
   min-block-size: 668px;
   padding: 10px;
   position: relative;
@@ -309,24 +307,24 @@
 .why_section {
   grid-template-columns: min-content 1fr;
 }
-.why_section .card_list{
+.why_section .card_list {
   padding-left: 20px;
 }
 
 .question {
   inline-size: 236px;
-  grid-column: 1; /* первая колонка */
+  grid-column: 1;
   grid-row: 1 / 6;
 }
 
 .card_list:first-child {
-  grid-column: 2; /* вторая колонка */
-  grid-row: 1; /* первая строка */
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .card_list:nth-child(2) {
-  grid-column: 2; /* вторая колонка */
-  grid-row: 2; /* вторая строка */
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .how_section {
@@ -339,7 +337,7 @@
   grid-row: 1;
 }
 
-.how_section .card_list{
+.how_section .card_list {
   display: flex;
   flex-direction: column;
   padding-left: 13px;
@@ -350,7 +348,7 @@
   display: grid;
   gap: 20px;
   min-inline-size: 728px;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 колонки равной ширины */
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
       "sunset sunset ice"
       "tape books ice"
@@ -386,8 +384,8 @@
 @media (min-width: 1024px) {
 
 .header__theme-menu {
-  align-self: start; /* сверху */
-  justify-self: center; /* по центру */
+  align-self: start;
+  justify-self: center;
   margin-block-start: 10px;
   margin-inline-start: 36px;
   padding-right: 16px;
@@ -395,7 +393,7 @@
 
 .header__theme-menu-list {
   display: flex;
-  flex-direction: row; /* горизонтально */
+  flex-direction: row;
   gap: 10px;
   list-style-type: none;
 }
@@ -423,7 +421,7 @@
   grid-template-columns: min-content 1fr;
 }
 
-.how_section .card_list{
+.how_section .card_list {
   padding-left: 20px;
 }
 
@@ -444,7 +442,7 @@
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px; /* отступы между рядами */
+  gap: 20px;
 }
 
 .footer_propert {
