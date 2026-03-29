@@ -104,8 +104,8 @@
   border: 1px solid var(--nav-color);
 }
 
-.header__theme-menu-button:active {
-  outline: none !important;
+.header__theme-menu-button:focus-visible {
+  outline: none;
   border-bottom: 1px solid  var(--nav-color);
 }
 
@@ -114,7 +114,7 @@
 }
 
 .title__caption {
-  font-family: 'IBM Plex mono';
+  font-family: 'IBM Plex mono', monospace;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
