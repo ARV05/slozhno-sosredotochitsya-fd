@@ -18,21 +18,4 @@
 .decorative-rec {
   visibility: visible;
 }
-
-.header__theme-menu-button_type_light {
-  border: none;
-}
-
-.header__theme-menu-button_type_dark {
-  border: 1px solid var(--nav-color);
-}
-
-.header__theme-menu-button_type_light:hover {
-  border: 1px solid var(--focus-text-hover);
-}
-
-.header__theme-menu-button_type_light:focus {
-  border:none;
-  border-bottom: 1px solid var(--nav-color);
-}
 }
